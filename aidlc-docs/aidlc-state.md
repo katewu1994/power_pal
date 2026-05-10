@@ -4,7 +4,7 @@
 **Project**: PowerPal
 **Methodology**: [AI-DLC](https://github.com/awslabs/aidlc-workflows)（AI-Driven Development Life Cycle）
 **State Version**: 2.2
-**Last Updated**: 2026-05-10T09:29:31Z
+**Last Updated**: 2026-05-10T10:01:16Z
 
 > 本ファイルは AIDLC ワークフロー進捗の **single source of truth** である。セッション再開時、エージェントは必ず最初に本ファイルを読み、Stage Progress テーブル中の最初の非 `COMPLETE` ステージを特定し、対応するプラン／アーティファクトファイルから再開すること。
 
@@ -150,6 +150,7 @@ Inception アーティファクトは AIDLC 標準ディレクトリ構造へ再
 | Components | `aidlc-docs/inception/application-design/components.md` |
 | Services | `aidlc-docs/inception/application-design/services.md` |
 | Component Dependency | `aidlc-docs/inception/application-design/component-dependency.md` |
+| Character Spec | `aidlc-docs/inception/design/character-spec.md` |
 
 現行ファイル構成（今後更新される出力先を含む）:
 
@@ -165,6 +166,8 @@ aidlc-docs/
     ├── user-stories/
     │   ├── stories.md                                ← ユーザーストーリーの正本
     │   └── personas.md                               ← ペルソナ抽出済み
+    ├── design/
+    │   └── character-spec.md                         ← キャラクター原案と状態表現の補助仕様
     └── application-design/
         ├── application-design.md                     ← アプリケーション設計書の正本
         ├── components.md                             ← コンポーネント構成抽出済み
@@ -227,7 +230,7 @@ PowerPal は単一の Electron アプリだが、Construction を効率化する
 |---|---|---|
 | TBD-01 | 跨日記憶を口調に反映する具体ルール | Phase 2（MVP 後） |
 | TBD-02 | 多端末同期時のデータスキーマ・暗号化方式 | Phase 2 設計時 |
-| TBD-D-01 | キャラクターアートの最終デザイン | MVP コード生成前 |
+| TBD-D-01 | キャラクターアートの最終デザイン（現行ドラフト: `aidlc-docs/inception/design/character-spec.md`） | MVP コード生成前 |
 | TBD-D-02 | デモ用スクリプト（60-90 秒）の最終文言 | デモ前日 |
 
 ---
@@ -262,6 +265,7 @@ PowerPal は単一の Electron アプリだが、Construction を効率化する
 - `aidlc-docs/inception/user-stories/personas.md`
 - `aidlc-docs/inception/user-stories/stories.md`
 - `aidlc-docs/inception/application-design/application-design.md`
+- `aidlc-docs/inception/design/character-spec.md`
 - 本 `aidlc-state.md`（特に「暫定ユニット分解」セクション）
 
 **生成すべき出力**:
